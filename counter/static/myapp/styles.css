@@ -1,0 +1,21 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+}
+
+#counter {
+    font-size: 32px;
+    color: black;
+}
+
+button {
+    color: black;
+    background-color: beige;
+    border-color: brown;
+    font-size: 15px;
+}
+

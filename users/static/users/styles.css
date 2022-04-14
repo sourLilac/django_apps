@@ -1,0 +1,101 @@
+/* general */
+body {
+    background-color: black;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+}
+
+nav {
+    border-radius: 100px;
+    background-color: rgb(61, 57, 57);
+}
+
+nav ul {
+    display: flex;
+    color: white;
+}
+
+nav ul li {
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px;
+    background-color: grey;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* login css */
+.login-container {
+    margin-top: 300px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#login-submit {
+    color: red;
+    background-color: black;
+    border-color: red;
+}
+
+#login-register {
+    color: red;
+}
+
+#login-invalid {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* user css */
+#user-hello {
+    color: white;
+}
+
+/* register css */
+.register-container {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#register-button {
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+
+}
+
+/* Contact Us */
+
+#contactus-form {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 800px;
+    text-align: center;
+    color: red;
+}

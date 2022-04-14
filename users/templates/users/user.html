@@ -1,0 +1,18 @@
+{% extends 'users/layout.html' %}
+
+{% block body %}
+
+<nav>
+    <ul>
+        <li><a style="text-decoration:none" href="">HOME</a></li>
+        <li><a style="text-decoration:none" href="/users/counter">Counter</a></li>
+        <li><a style="text-decoration:none" href="/users/noted">Noted</a></li>
+        <li id="user-panel"><a style="text-decoration:none" href="#">Settings</a></li>
+        <li><a style="text-decoration:none" href="{% url 'logout' %}">Logout</a></li>
+    </ul>
+</nav>
+
+<h1 id="user-hello">Hello, {{ request.user.username }}</h1>
+<h2 id="user-hello">What are you going to do today?</h2>
+
+{% endblock %}

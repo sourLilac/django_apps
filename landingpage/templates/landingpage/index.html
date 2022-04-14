@@ -1,0 +1,22 @@
+{% extends 'landingpage/layout.html' %}
+
+{% block body %}
+    <div id="app">
+    <script type="text/babel">
+        function App() {
+            return(
+                <div>
+                    <div className="title">
+                        <h1>Welcome to Noted</h1>
+                        <h1></h1>
+                        <a href="/users">Get Started</a>
+                    </div>
+                </div>
+            )
+        }
+
+
+        ReactDOM.render(<App />, document.querySelector('#app'))
+    </script>
+    </div>
+{% endblock %}

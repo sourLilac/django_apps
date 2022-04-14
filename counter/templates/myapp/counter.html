@@ -1,0 +1,61 @@
+{% extends 'myapp/layout.html' %}
+
+{% block body %}
+<script>
+    if (!localStorage.getItem('counter')) {
+        localStorage.setItem('counter', 0);
+
+    }
+
+    const plus = () => {
+        let counter = localStorage.getItem('counter');
+        counter++;
+        document.querySelector('#counter').innerHTML = counter;
+        localStorage.setItem('counter', counter);
+    }
+
+    const minus = () => {
+        let counter = localStorage.getItem('counter');
+        counter--;
+        document.querySelector('#counter').innerHTML = counter;
+        localStorage.setItem('counter', counter);
+    }
+
+    const reset = () => {
+        let reset = localStorage.getItem('counter');
+        reset = 0
+        document.querySelector('#counter').innerHTML = reset
+        localStorage.setItem('counter', reset)
+    }
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#counter').innerHTML = localStorage.getItem('counter');
+        document.querySelector('#increment').onclick = plus;
+        document.querySelector('#decrement').onclick = minus;
+        document.querySelector('#reset').onclick = reset;
+        // setInterval(plus, 1000);
+
+
+        // setInterval(minus, 10);
+
+    });
+    
+    if (document.querySelector('#counter') == 10) {
+        document.querySelector('#counter').innerHTML = 'Its Over'
+        };
+
+</script>
+<div class="container">
+    <h1>Counter</h1>
+    <h1 id="counter">0</h1>
+    <button id="increment">Plus</button>
+    <button id="decrement">Minus</button>
+    <button id="reset">Reset</button>
+</div>
+
+<br>
+<br>
+
+<a href="/users">Back to Home</a>
+{% endblock %}

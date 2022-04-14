@@ -1,0 +1,19 @@
+{% extends 'users/layout.html' %}
+
+{% block body %}
+    
+
+    <div class="register-container">
+        <h1>Welcome, pelase provide some information</h1>
+
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+
+            {{ form }}
+            <br>
+            <input id="register-button" type="submit" value="Register">
+        </form>
+    </div>
+
+
+{% endblock %}
